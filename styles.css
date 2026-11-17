@@ -1143,6 +1143,14 @@ ul {
 }
 
 @media (max-width: 768px) {
+  html {
+    scroll-padding-top: 16px;
+  }
+
+  .site-header {
+    position: relative;
+  }
+
   .section {
     padding: 64px 0;
   }
