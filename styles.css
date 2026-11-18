@@ -664,6 +664,146 @@ ul {
   line-height: 1.45;
 }
 
+/* 7b. App UI Preview (Mobile Device Showcase)
+   -------------------------------------------------------------------------- */
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.preview-card {
+  padding: 32px 28px 28px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(155deg, rgba(24, 11, 88, 0.86), rgba(9, 4, 44, 0.94));
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.preview-card:hover {
+  transform: translateY(-4px);
+}
+
+.preview-card--violet:hover {
+  border-color: rgba(168, 85, 247, 0.72);
+  box-shadow: 0 22px 48px rgba(124, 58, 237, 0.24);
+}
+
+.preview-card--cyan:hover {
+  border-color: rgba(0, 229, 255, 0.72);
+  box-shadow: 0 22px 48px rgba(0, 229, 255, 0.18);
+}
+
+.phone-stage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 4px;
+}
+
+.phone-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 240px;
+  height: 360px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  filter: blur(36px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.phone-glow--violet {
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.45) 0%, transparent 72%);
+}
+
+.phone-glow--cyan {
+  background: radial-gradient(circle, rgba(0, 229, 255, 0.35) 0%, transparent 72%);
+}
+
+.phone-frame {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 268px);
+  padding: 12px 9px 10px;
+  border-radius: 34px;
+  background: linear-gradient(160deg, rgba(148, 163, 184, 0.28) 0%, rgba(15, 10, 48, 0.96) 38%, rgba(4, 2, 28, 0.98) 100%);
+  border: 1.5px solid rgba(167, 139, 250, 0.42);
+  box-shadow:
+    0 24px 48px rgba(2, 1, 24, 0.8),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+.phone-speaker {
+  width: 52px;
+  height: 5px;
+  margin: 0 auto 9px;
+  border-radius: var(--radius-pill);
+  background: rgba(148, 163, 184, 0.32);
+}
+
+.phone-screen {
+  border-radius: 24px;
+  overflow: hidden;
+  background: #060238;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.phone-screen img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.preview-caption {
+  max-width: 340px;
+}
+
+.preview-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.preview-tag--violet {
+  color: #d8b4fe;
+  background: rgba(168, 85, 247, 0.16);
+  border: 1px solid rgba(168, 85, 247, 0.42);
+}
+
+.preview-tag--cyan {
+  color: var(--neon-cyan);
+  background: rgba(0, 229, 255, 0.14);
+  border: 1px solid rgba(0, 229, 255, 0.4);
+}
+
+.preview-caption h3 {
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: var(--text-white);
+  margin-bottom: 6px;
+}
+
+.preview-caption p {
+  font-size: 0.91rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
 /* 8. Sanitization Modes (Wipe Mode vs Ghost Mask)
    -------------------------------------------------------------------------- */
 .modes-grid {
@@ -1210,13 +1350,15 @@ ul {
   }
 
   .features-grid,
+  .preview-grid,
   .modes-grid,
   .tools-grid {
     grid-template-columns: 1fr;
   }
 
   .showcase-card,
-  .privacy-banner {
+  .privacy-banner,
+  .preview-card {
     padding: 26px 20px;
   }
 }
@@ -1231,7 +1373,8 @@ ul {
   }
 
   .btn,
-  .feature-card {
+  .feature-card,
+  .preview-card {
     transition: none;
   }
 }
