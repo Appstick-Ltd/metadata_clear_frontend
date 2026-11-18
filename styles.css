@@ -1248,6 +1248,150 @@ ul {
   color: var(--text-dim);
 }
 
+/* 12b. Legal Pages (Privacy Policy & Account Deletion)
+   -------------------------------------------------------------------------- */
+.nav-links a.nav-active {
+  color: var(--neon-cyan);
+  font-weight: 700;
+}
+
+.legal-page {
+  padding: 56px 0 84px;
+}
+
+.legal-container {
+  max-width: 880px;
+}
+
+.legal-hero {
+  margin-bottom: 34px;
+}
+
+.legal-meta {
+  margin-top: 10px;
+  font-size: 0.92rem;
+  color: var(--text-dim);
+}
+
+.legal-meta code,
+.legal-card code {
+  padding: 2px 7px;
+  border-radius: 6px;
+  background: rgba(124, 58, 237, 0.22);
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  color: var(--cyan-light);
+  font-size: 0.86em;
+}
+
+.legal-highlight {
+  margin-top: 20px;
+  padding: 18px 22px;
+  border-radius: var(--radius-md);
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.42);
+  color: var(--text-light);
+  font-size: 0.96rem;
+}
+
+.legal-highlight strong {
+  color: #6ee7b7;
+}
+
+.legal-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.legal-card {
+  display: flex;
+  gap: 18px;
+  padding: 26px;
+  border-radius: var(--radius-md);
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+}
+
+.legal-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--electric-violet), var(--electric-blue));
+  color: var(--text-white);
+  font-weight: 800;
+  font-size: 0.95rem;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.legal-card h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 8px;
+}
+
+.legal-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.legal-list {
+  margin-top: 10px;
+  padding-left: 18px;
+  list-style: disc;
+  color: var(--text-muted);
+  font-size: 0.94rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.legal-steps {
+  margin-top: 10px;
+  padding-left: 20px;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.legal-inline-link {
+  color: var(--cyan-light);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal-inline-link:hover {
+  color: var(--neon-cyan);
+}
+
+.legal-action-row {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+
+.legal-email-note {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+}
+
+@media (max-width: 640px) {
+  .legal-card {
+    flex-direction: column;
+    padding: 20px;
+    gap: 12px;
+  }
+}
+
 /* 13. Responsive Breakpoints & Reduced Motion
    -------------------------------------------------------------------------- */
 @media (max-width: 960px) {
