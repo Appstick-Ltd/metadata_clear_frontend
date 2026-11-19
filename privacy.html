@@ -7,7 +7,7 @@
   <title>Privacy Policy — Metadata Cleaner</title>
   <meta name="description"
     content="Privacy Policy for Metadata Cleaner (bd.com.appstick.metadatacleaner) by Appstick Ltd. All file scanning and metadata sanitization run 100% offline on your device." />
-  <meta name="theme-color" content="#05022C" />
+  <meta name="theme-color" content="#4F46E5" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,177 +17,346 @@
 </head>
 
 <body id="top">
+
   <!-- Header -->
   <header class="site-header">
-    <div class="container nav-wrap">
-      <a href="index.html" class="brand">
-        <img src="assets/logo.png" alt="Metadata Cleaner logo" class="brand-logo" width="38" height="38" />
-        <span>Metadata Cleaner</span>
-      </a>
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo" aria-label="Metadata Cleaner Home">
+          <img src="assets/logo.png" alt="Metadata Cleaner Logo" class="brand-icon" width="38" height="38" />
+          <span class="brand-name">Metadata Cleaner</span>
+        </a>
 
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" />
-      <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle navigation menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-
-      <nav class="nav-menu" aria-label="Primary Navigation">
-        <ul class="nav-links">
-          <li><a href="index.html#features">Features</a></li>
-          <li><a href="index.html#modes">Clean Modes</a></li>
-          <li><a href="index.html#formats">Formats</a></li>
-          <li><a href="privacy.html" class="nav-active">Privacy Policy</a></li>
-          <li><a href="delete-account.html">Delete Account</a></li>
+        <ul class="nav-menu">
+          <li><a href="index.html#top" class="nav-link">Home</a></li>
+          <li><a href="index.html#features" class="nav-link">Features</a></li>
+          <li><a href="index.html#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="privacy.html" class="nav-link active">Privacy Policy</a></li>
+          <li><a href="terms.html" class="nav-link">Terms</a></li>
+          <li><a href="delete-account.html" class="nav-link">Delete Account</a></li>
         </ul>
-        <a href="index.html#download" class="btn btn-primary btn-sm">Get the App</a>
+
+        <div class="header-actions">
+          <a href="index.html#download" class="btn-primary btn-sm">Get App</a>
+          <button class="mobile-nav-toggle" aria-label="Toggle mobile menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </nav>
     </div>
   </header>
 
-  <main class="legal-page">
-    <div class="container legal-container">
-      <div class="legal-hero">
-        <span class="eyebrow">Legal &amp; Privacy</span>
-        <h1 class="section-title">Metadata Cleaner <span class="text-gradient">Privacy Policy</span></h1>
-        <p class="legal-meta">
-          Effective Date: November 2026 &bull; Version 1.0 &bull; App ID: <code>bd.com.appstick.metadatacleaner</code> &bull; Developer: <strong>Appstick Ltd</strong>
+  <!-- Legal Header Banner -->
+  <div class="legal-header-banner">
+    <div class="container">
+      <div class="legal-header-content">
+        <div class="badge-tag badge-tag--emerald">Privacy First Architecture</div>
+        <h1 class="section-title">Privacy Policy</h1>
+        <p class="section-subtitle">
+          Metadata Cleaner is built from the ground up to protect your personal privacy.
+          All file inspection and metadata sanitization occur strictly inside your device.
         </p>
-        <div class="legal-highlight">
-          <strong>On-Device File Processing Guarantee:</strong>
-          All file inspection, AI prompt detection, and metadata sanitization happen strictly inside your device sandbox. Your photos, PDFs, and DOCX files are never uploaded to any server.
+
+        <div class="legal-meta-row">
+          <span>Effective Date: <strong>November 2026</strong></span>
+          <span>Version: <strong>1.0.0</strong></span>
+          <span>Package: <code>bd.com.appstick.metadatacleaner</code></span>
+          <span>Developer: <strong>Appstick Ltd</strong></span>
+        </div>
+
+        <div class="legal-highlight-box">
+          <strong>100% On-Device Processing Guarantee:</strong>
+          Metadata Cleaner never uploads your photos, PDFs, or DOCX documents to any external or cloud server.
+          Temporary memory buffers are wiped immediately upon task completion.
         </div>
       </div>
+    </div>
+  </div>
 
-      <div class="legal-sections">
-        <article class="legal-card">
-          <div class="legal-num">1</div>
-          <div>
-            <h2>Local Processing &amp; Zero File Retention</h2>
+  <!-- Legal Main Layout -->
+  <main class="legal-page">
+    <div class="container">
+      <div class="legal-layout">
+
+        <!-- Sticky Table of Contents -->
+        <aside class="legal-toc" aria-label="Table of Contents">
+          <h4>Contents</h4>
+          <ol>
+            <li><a href="#local-processing">1. Local Processing Guarantee</a></li>
+            <li><a href="#data-not-collected">2. Data We Do Not Collect</a></li>
+            <li><a href="#account-auth">3. Account &amp; Authentication</a></li>
+            <li><a href="#modes-processing">4. Sanitization Modes</a></li>
+            <li><a href="#device-permissions">5. Device Permissions</a></li>
+            <li><a href="#no-ads">6. No Ads or Third-Party Trackers</a></li>
+            <li><a href="#retention-deletion">7. Retention &amp; Deletion</a></li>
+            <li><a href="#children-privacy">8. Children's Privacy</a></li>
+            <li><a href="#contact">9. Contact Information</a></li>
+          </ol>
+        </aside>
+
+        <!-- Legal Content Sections -->
+        <article class="legal-content">
+
+          <!-- Section 1 -->
+          <section class="legal-section-card" id="local-processing">
+            <h2>
+              <span class="legal-num-badge">1</span>
+              Local Processing Guarantee
+            </h2>
             <p>
-              Metadata Cleaner processes your images (<code>JPG</code>, <code>PNG</code>, <code>WEBP</code>) and documents (<code>PDF</code>, <code>DOCX</code>) strictly locally on your device. We have zero access to the contents or metadata of files you inspect or sanitize.
+              Metadata Cleaner processes your images (<code>JPG</code>, <code>PNG</code>, <code>WEBP</code>) and
+              documents (<code>PDF</code>, <code>DOCX</code>) strictly on your mobile device. All metadata inspection,
+              AI prompt detection, and byte sanitization algorithms run entirely offline within your device's sandbox.
             </p>
             <ul class="legal-list">
-              <li>Zero file uploads to external or cloud servers.</li>
-              <li>Temporary in-memory buffers are cleared immediately upon task completion.</li>
-              <li>No remote logging, telemetry, or audit trails of your files.</li>
+              <li><strong>Zero Cloud Uploads:</strong> Your files are never transmitted to Appstick servers or third parties.</li>
+              <li><strong>Immediate Buffer Clearance:</strong> In-memory file bytes are cleared from RAM right after cleaning.</li>
+              <li><strong>No Remote Telemetry:</strong> We do not log filenames, file contents, hashes, or locations.</li>
             </ul>
-          </div>
-        </article>
+          </section>
 
-        <article class="legal-card">
-          <div class="legal-num">2</div>
-          <div>
-            <h2>Account &amp; Authentication Information</h2>
+          <!-- Section 2 -->
+          <section class="legal-section-card" id="data-not-collected">
+            <h2>
+              <span class="legal-num-badge">2</span>
+              Data We Do Not Collect
+            </h2>
             <p>
-              Metadata Cleaner offers optional or user-initiated account sign-in via <strong>Firebase Authentication</strong> (Email/Password and Google Sign-In). When you sign in, only the minimal authentication details required to manage your account are processed:
+              To maintain the highest privacy standards, Metadata Cleaner strictly refrains from collecting any of the following:
             </p>
             <ul class="legal-list">
-              <li><strong>Collected Account Data:</strong> Name, email address, and Firebase Authentication User ID (UID).</li>
-              <li><strong>Purpose:</strong> Account authentication, profile display, and session management.</li>
-              <li><strong>Security:</strong> All authentication traffic is encrypted in transit via HTTPS/TLS. We never sell or share your personal information with third parties or advertisers.</li>
+              <li>Your photos, videos, documents, or their embedded contents.</li>
+              <li>Original or cleaned metadata (EXIF tags, GPS coordinates, author names, AI generation prompts).</li>
+              <li>Device location history, IP location logging, or network traffic dumps.</li>
+              <li>Personal contacts, SMS, call history, or other sensitive smartphone data.</li>
             </ul>
-          </div>
-        </article>
+          </section>
 
-        <article class="legal-card">
-          <div class="legal-num">3</div>
-          <div>
-            <h2>Metadata Stripping &amp; Sanitization Modes</h2>
+          <!-- Section 3 -->
+          <section class="legal-section-card" id="account-auth">
+            <h2>
+              <span class="legal-num-badge">3</span>
+              Optional Account &amp; Authentication
+            </h2>
             <p>
-              Metadata Cleaner provides two local sanitization modes so you remain in full control of your files:
+              Metadata Cleaner provides optional cloud profile syncing via <strong>Firebase Authentication</strong> (Email/Password and Google Sign-In). Account creation is not required to use the core offline metadata cleaning tools.
+            </p>
+            <p>
+              If you voluntarily choose to sign in, we process only the minimal authentication records required by Firebase:
             </p>
             <ul class="legal-list">
-              <li><strong>Wipe Mode:</strong> Completely strips EXIF, XMP, IPTC, GPS coordinates, camera serials, author properties, and embedded AI generation prompts/workflows.</li>
-              <li><strong>Ghost Mask Mode:</strong> Replaces identifying metadata headers with harmless generic/synthetic placeholders. <em>Transparency Note: Ghost Masking performs cosmetic replacement only and does not provide verifiable cryptographic provenance.</em></li>
+              <li><strong>Collected Data:</strong> Your email address, display name, and unique Firebase Auth User ID (UID).</li>
+              <li><strong>Purpose:</strong> Authentication session state, profile synchronization, and access management.</li>
+              <li><strong>Security:</strong> All communication with Firebase Authentication is strictly encrypted via HTTPS/TLS 1.3. We never sell, rent, or trade your credentials.</li>
             </ul>
-          </div>
-        </article>
+          </section>
 
-        <article class="legal-card">
-          <div class="legal-num">4</div>
-          <div>
-            <h2>Device Permissions Transparency</h2>
+          <!-- Section 4 -->
+          <section class="legal-section-card" id="modes-processing">
+            <h2>
+              <span class="legal-num-badge">4</span>
+              Sanitization Modes &amp; Processing
+            </h2>
             <p>
-              We follow strict least-privilege permissions. Metadata Cleaner only accesses a file or camera capture when you explicitly select files via the system picker or tap the camera option inside the app.
+              Metadata Cleaner offers two distinct local sanitization modes:
             </p>
             <ul class="legal-list">
-              <li>No broad storage scanning or background directory access.</li>
-              <li>No access to contacts, call logs, SMS, or background location history.</li>
-              <li>Clean copies are saved safely while respecting your <em>Keep Original File</em> backup preference.</li>
+              <li><strong>Wipe Mode:</strong> Completely deletes EXIF, XMP, IPTC, GPS coordinates, camera serials, and AI generation prompts from binary file headers.</li>
+              <li><strong>Ghost Mask Mode:</strong> Replaces identifying tags with realistic, generic placeholders (e.g. standard camera models) so parsers that expect metadata headers do not report syntax errors.</li>
             </ul>
-          </div>
-        </article>
-
-        <article class="legal-card">
-          <div class="legal-num">5</div>
-          <div>
-            <h2>No Ads &amp; Zero Behavioral Trackers</h2>
-            <p>
-              Metadata Cleaner contains zero third-party advertising networks and zero behavioral analytics or ad-tracking SDKs. Your usage of the app is never profiled for marketing.
+            <p style="margin-top: 10px; font-size: 0.88rem; color: var(--text-light);">
+              <em>Transparency Note: Ghost Masking is intended solely for harmless cosmetic privacy replacement and does not constitute cryptographic provenance proof.</em>
             </p>
-          </div>
-        </article>
+          </section>
 
-        <article class="legal-card">
-          <div class="legal-num">6</div>
-          <div>
-            <h2>Data Retention, Ownership &amp; Account Deletion</h2>
+          <!-- Section 5 -->
+          <section class="legal-section-card" id="device-permissions">
+            <h2>
+              <span class="legal-num-badge">5</span>
+              Device Permissions Transparency
+            </h2>
             <p>
-              You retain 100% legal ownership and copyright over all documents and images processed with Metadata Cleaner. Sanitization history and preferences are stored locally on your device and cleared automatically if you delete your account or uninstall the app.
-            </p>
-            <p style="margin-top: 10px;">
-              You can permanently delete your account and associated authentication data anytime inside the app (<strong>Settings &rarr; Delete Account</strong>) or via our <a href="delete-account.html" class="legal-inline-link">Account Deletion page</a>.
-            </p>
-          </div>
-        </article>
-
-        <article class="legal-card">
-          <div class="legal-num">7</div>
-          <div>
-            <h2>Children&rsquo;s Privacy &amp; Contact Us</h2>
-            <p>
-              Metadata Cleaner is a general-audience privacy utility and is not directed to children under 13. If you have any privacy questions or data requests, please contact <strong>Appstick Ltd</strong>:
+              Metadata Cleaner requests only the permissions strictly necessary to perform file sanitization:
             </p>
             <ul class="legal-list">
-              <li>Email: <a href="mailto:info@appstick.com.bd" class="legal-inline-link">info@appstick.com.bd</a></li>
-              <li>Phone: <a href="tel:+8801404049797" class="legal-inline-link">+88 014 0404 9797</a></li>
-              <li>Address: 50, KDA Outer Bypass Rd, Khulna 9100, Bangladesh</li>
-              <li>Website: <a href="https://appstick.com.bd/" target="_blank" rel="noopener noreferrer" class="legal-inline-link">https://appstick.com.bd/</a></li>
+              <li><strong>Storage / Media Picker Access:</strong> Used exclusively to open files you specifically choose to inspect or clean, and to save sanitized copies in your output folder.</li>
+              <li><strong>Camera (Optional):</strong> Used only if you choose the "Take Photo" feature inside the app to capture and immediately strip metadata from a fresh picture.</li>
+              <li><strong>Network (Optional):</strong> Used solely for optional Firebase Authentication sign-in, account management, and checking for app updates. Core file sanitization works 100% offline without internet.</li>
             </ul>
-          </div>
+          </section>
+
+          <!-- Section 6 -->
+          <section class="legal-section-card" id="no-ads">
+            <h2>
+              <span class="legal-num-badge">6</span>
+              No Ads &amp; Zero Third-Party Trackers
+            </h2>
+            <p>
+              Metadata Cleaner contains <strong>zero third-party advertising SDKs</strong> (no Google AdMob, Unity, Meta Ads, etc.) and <strong>zero behavioral analytics trackers</strong>. We do not track your usage habits across applications or sell data to brokers.
+            </p>
+          </section>
+
+          <!-- Section 7 -->
+          <section class="legal-section-card" id="retention-deletion">
+            <h2>
+              <span class="legal-num-badge">7</span>
+              Data Retention, Ownership &amp; Account Deletion
+            </h2>
+            <p>
+              You retain 100% ownership and intellectual property rights over all files you inspect and clean.
+              Your file cleaning history is saved locally in your device database and is cleared immediately if you clear app storage or uninstall the app.
+            </p>
+            <p>
+              If you created an optional Firebase account, you can permanently delete it at any time:
+            </p>
+            <ul class="legal-list">
+              <li><strong>In-App:</strong> Navigate to <strong>Settings &rarr; Account &rarr; Delete Account</strong>.</li>
+              <li><strong>Online / Support:</strong> Follow the steps on our dedicated <a href="delete-account.html">Account Deletion Page</a> or email <a href="mailto:info@appstick.com.bd">info@appstick.com.bd</a>.</li>
+            </ul>
+          </section>
+
+          <!-- Section 8 -->
+          <section class="legal-section-card" id="children-privacy">
+            <h2>
+              <span class="legal-num-badge">8</span>
+              Children's Privacy
+            </h2>
+            <p>
+              Metadata Cleaner is a general audience utility and is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13.
+            </p>
+          </section>
+
+          <!-- Section 9 -->
+          <section class="legal-section-card" id="contact">
+            <h2>
+              <span class="legal-num-badge">9</span>
+              Contact Information
+            </h2>
+            <p>
+              If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please contact our team:
+            </p>
+            <ul class="legal-list">
+              <li><strong>Company:</strong> Appstick Ltd</li>
+              <li><strong>Email:</strong> <a href="mailto:info@appstick.com.bd">info@appstick.com.bd</a></li>
+              <li><strong>Phone:</strong> <a href="tel:+8801404049797">+88 014 0404 9797</a></li>
+              <li><strong>Address:</strong> 50, KDA Outer Bypass Rd, Khulna 9100, Bangladesh</li>
+              <li><strong>Official Website:</strong> <a href="https://appstick.com.bd/" target="_blank" rel="noopener noreferrer">https://appstick.com.bd/</a></li>
+            </ul>
+          </section>
+
         </article>
       </div>
     </div>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-wrap">
+      <div class="footer-top">
         <div class="footer-brand">
-          <img src="assets/logo.png" alt="Metadata Cleaner logo" class="brand-logo" width="34" height="34" />
-          <div>
-            <strong>Metadata Cleaner</strong>
-            <p>
-              Clean &bull; Protect &bull; Stay Private &mdash; by
-              <a href="https://appstick.com.bd/" target="_blank" rel="noopener noreferrer">Appstick Ltd</a>
-            </p>
-          </div>
+          <a href="index.html#top" class="brand-logo">
+            <img src="assets/logo.png" alt="Metadata Cleaner Logo" class="brand-icon" width="34" height="34" />
+            <span class="brand-name">Metadata Cleaner</span>
+          </a>
+          <p>
+            On-device AI metadata &amp; document privacy sanitizer by
+            <a href="https://appstick.com.bd/" target="_blank" rel="noopener noreferrer">Appstick Ltd</a>.
+          </p>
         </div>
 
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="delete-account.html">Account Deletion</a></li>
-          <li><a href="mailto:info@appstick.com.bd">Support</a></li>
-        </ul>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#top">Home</a></li>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+            <li><a href="index.html#screens">App Screens</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#download">Download Android</a></li>
+            <li><a href="index.html#download">iOS (Coming Soon)</a></li>
+            <li><a href="index.html#inspector">Metadata Inspector</a></li>
+            <li><a href="index.html#modes">Wipe &amp; Mask Modes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal &amp; Support</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="delete-account.html">Delete Account</a></li>
+            <li><a href="mailto:info@appstick.com.bd">Help &amp; Support</a></li>
+          </ul>
+          <div style="margin-top: 18px;">
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-10 6L2 7" />
+              </svg>
+              <a href="mailto:info@appstick.com.bd">info@appstick.com.bd</a>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              <a href="tel:+8801404049797">+88 014 0404 9797</a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="footer-company">
-        <p class="footer-copy">&copy; 2026 Appstick Ltd. All rights reserved.</p>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Metadata Cleaner. All rights reserved. Developed by <a href="https://appstick.com.bd/"
+            target="_blank" rel="noopener noreferrer">Appstick Ltd</a>.</p>
+
+        <div class="footer-socials">
+          <a href="https://facebook.com/appstick.com.bd" target="_blank" rel="noopener noreferrer" class="social-link"
+            aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.413c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.971H15.83c-1.491 0-1.956.93-1.956 1.886v2.264h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" />
+            </svg>
+          </a>
+          <a href="https://appstick.com.bd/" target="_blank" rel="noopener noreferrer" class="social-link"
+            aria-label="Appstick Website">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="2" y1="12" x2="22" y2="12" />
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg>
+          </a>
+          <a href="mailto:info@appstick.com.bd" class="social-link" aria-label="Email Support">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m22 7-10 6L2 7" />
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

@@ -7,7 +7,7 @@
   <title>Metadata Cleaner — AI Metadata &amp; Document Privacy Sanitizer</title>
   <meta name="description"
     content="Metadata Cleaner: losslessly inspect, strip, or mask AI generation prompts, EXIF, GPS coordinates, and hidden author tags from JPG, PNG, WEBP, PDF, and DOCX files — 100% on-device." />
-  <meta name="theme-color" content="#05022C" />
+  <meta name="theme-color" content="#4F46E5" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,133 +22,224 @@
        Header / Navigation
        ===================================================================== -->
   <header class="site-header">
-    <div class="container nav-wrap">
-      <a href="#top" class="brand">
-        <img src="assets/logo.png" alt="Metadata Cleaner logo" class="brand-logo" width="38" height="38" />
-        <span>Metadata Cleaner</span>
-      </a>
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="#top" class="brand-logo" aria-label="Metadata Cleaner Home">
+          <img src="assets/logo.png" alt="Metadata Cleaner Logo" class="brand-icon" width="38" height="38" />
+          <span class="brand-name">Metadata Cleaner</span>
+        </a>
 
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" />
-      <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle navigation menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-
-      <nav class="nav-menu" aria-label="Primary Navigation">
-        <ul class="nav-links">
-          <li><a href="#features">Features</a></li>
-          <li><a href="#preview">App Preview</a></li>
-          <li><a href="#modes">Clean Modes</a></li>
-          <li><a href="#formats">Formats</a></li>
-          <li><a href="#privacy">Privacy</a></li>
-          <li><a href="#faq">FAQ</a></li>
+        <ul class="nav-menu">
+          <li><a href="#top" class="nav-link active">Home</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#screens" class="nav-link">App Screens</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
         </ul>
-        <a href="#download" class="btn btn-primary btn-sm">Get the App</a>
+
+        <div class="header-actions">
+          <a href="#download" class="btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Download App</span>
+          </a>
+
+          <button class="mobile-nav-toggle" aria-label="Toggle mobile menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </nav>
     </div>
   </header>
 
   <main>
     <!-- ===================================================================
-         Hero Section
+         Hero Section (Layered Dual-Screen Mockup)
          =================================================================== -->
-    <section class="hero">
+    <section class="hero-section">
       <div class="container hero-grid">
-        <div class="hero-copy">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            <span>100% Offline &bull; On-Device File Privacy</span>
+          </div>
+
           <h1 class="hero-title">
-            Keep Your Files <span class="text-gradient">Private.</span>
+            Clean Hidden Metadata. <span class="text-gradient">Keep Your Files Private.</span>
           </h1>
 
           <p class="hero-subtitle">
-            <strong>Metadata Cleaner</strong> is an AI Metadata &amp; Document Privacy app.
-            Inspect and losslessly scrub AI generation prompts, EXIF camera serials,
-            GPS coordinates, and hidden author tags from your images and documents &mdash;
-            strictly on your device.
+            Inspect and losslessly strip AI generation prompts, EXIF camera tags,
+            exact GPS coordinates, and author profiles from your images and documents &mdash;
+            strictly on your device with zero cloud uploads.
           </p>
 
           <div class="hero-actions">
-            <a href="#download" class="btn btn-primary">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                stroke-linejoin="round" aria-hidden="true">
-                <path d="M12 3v12" />
-                <path d="m7 10 5 5 5-5" />
-                <path d="M5 20h14" />
+            <div class="store-buttons">
+              <!-- Google Play Store Button -->
+              <a href="#download" class="store-btn" aria-label="Download on Google Play">
+                <span class="store-btn-icon">
+                  <img src="assets/google-play.svg" alt="Google Play" width="26" height="26" />
+                </span>
+                <div class="store-btn-text">
+                  <span class="store-btn-sub">GET IT ON</span>
+                  <span class="store-btn-main">Google Play</span>
+                </div>
+              </a>
+
+              <!-- App Store Button (Coming Soon) -->
+              <div class="store-btn store-btn-soon" aria-label="App Store version coming soon">
+                <span class="store-btn-icon">
+                  <img src="assets/app-store.svg" alt="App Store" width="26" height="26" />
+                </span>
+                <div class="store-btn-text">
+                  <span class="store-btn-sub">Coming soon on the</span>
+                  <span class="store-btn-main">App Store</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-trust">
+            <div class="trust-item">
+              <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                <path d="m9 12 2 2 4-4" />
               </svg>
-              Download Metadata Cleaner
-            </a>
-            <a href="#features" class="btn btn-secondary">
-              Explore Features
-            </a>
+              <span>Zero Cloud Uploads</span>
+            </div>
+
+            <div class="trust-item">
+              <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+              <span>Lossless Scrubbing</span>
+            </div>
+
+            <div class="trust-item">
+              <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+              <span>No Ads or Trackers</span>
+            </div>
           </div>
         </div>
 
+        <!-- Enhanced Hero Phone Showcase -->
         <div class="hero-visual">
-          <div class="hero-glow" aria-hidden="true"></div>
-          <img src="assets/hero-shield.png" alt="Metadata Cleaner 3D privacy shield erasing hidden metadata pixels"
-            class="hero-shield-img" width="920" height="613" />
-          <div class="cyber-pedestal" aria-hidden="true"></div>
+          <div class="hero-ambient-glow" aria-hidden="true"></div>
 
-          <div class="hero-chips">
-            <span class="floating-chip"><span class="chip-dot chip-dot--cyan"></span>AI Prompts: Stripped</span>
-            <span class="floating-chip"><span class="chip-dot chip-dot--emerald"></span>GPS Coordinates: Cleared</span>
-            <span class="floating-chip"><span class="chip-dot chip-dot--lavender"></span>PDF &amp; DOCX: Clean</span>
+          <div class="hero-showcase-container">
+            <!-- Floating Chips -->
+            <div class="floating-chip floating-chip--top-left">
+              <span class="chip-dot chip-dot--cyan"></span>
+              <span>AI Prompts: Stripped</span>
+            </div>
+
+            <div class="floating-chip floating-chip--bottom-right">
+              <span class="chip-dot chip-dot--emerald"></span>
+              <span>GPS Coordinates: Cleared</span>
+            </div>
+
+            <div class="floating-chip floating-chip--bottom-left">
+              <span class="chip-dot chip-dot--indigo"></span>
+              <span>100% Offline Sandbox</span>
+            </div>
+
+            <!-- Layered Secondary Phone (Peeking behind) -->
+            <div class="hero-layered-phone">
+              <div class="phone-device">
+                <div class="phone-dynamic-island">
+                  <div class="phone-camera-lens"></div>
+                  <div class="phone-speaker-bar"></div>
+                </div>
+                <div class="phone-screen-display">
+                  <img src="assets/screen-tools.png" alt="Privacy tools preview" width="390" height="869" />
+                </div>
+                <div class="phone-home-indicator"></div>
+              </div>
+            </div>
+
+            <!-- Primary Foreground Phone -->
+            <div class="hero-primary-phone">
+              <div class="phone-device">
+                <div class="phone-dynamic-island">
+                  <div class="phone-camera-lens"></div>
+                  <div class="phone-speaker-bar"></div>
+                </div>
+                <div class="phone-screen-display">
+                  <img src="assets/screen-home.png"
+                    alt="Metadata Cleaner mobile home screen showing simple clean interface" width="389" height="868"
+                    priority />
+                </div>
+                <div class="phone-home-indicator"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ===================================================================
-         Before & After / What Hidden Metadata Leaks
+         Before & After Showcase / Leak Inspector
          =================================================================== -->
-    <section class="section section--compact" id="inspector">
+    <section class="section-padding section-alt" id="inspector">
       <div class="container">
-        <div class="showcase-card">
+        <div class="showcase-grid">
           <div class="showcase-media">
             <img src="assets/clean-compare.png"
-              alt="Comparison of a document with hidden metadata versus a clean and safe sanitized file" width="880"
-              height="586" />
+              alt="Comparison showing a file with hidden metadata versus sanitized file" width="880" height="586"
+              loading="lazy" />
           </div>
 
           <div>
-            <span class="eyebrow">Metadata Inspector</span>
-            <h2 class="section-title">See What Your Files Reveal Before You Share</h2>
+            <div class="badge-tag">Metadata Inspector</div>
+            <h2 class="section-title">See What Your Files Reveal Before Sharing</h2>
             <p class="section-subtitle">
-              Every photo, AI render, and office document carries invisible binary tags.
-              Metadata Cleaner scans raw file bytes locally and flags privacy risks by severity.
+              Every photo, AI render, and office document carries invisible binary data.
+              Metadata Cleaner scans file bytes locally and flags sensitive privacy leaks by severity.
             </p>
 
             <div class="risk-list">
-              <div class="risk-row">
-                <div class="risk-info">
+              <div class="risk-item">
+                <div class="risk-item-info">
                   <strong>AI Generation Prompts &amp; Workflows</strong>
-                  <span>Stable Diffusion, ComfyUI, Midjourney, DALL-E, ChatGPT, Firefly, NovelAI, InvokeAI &amp; C2PA
-                    tags</span>
+                  <span>Midjourney, Stable Diffusion, ComfyUI, DALL-E &amp; C2PA tags</span>
                 </div>
                 <span class="risk-badge risk-badge--high">High Risk</span>
               </div>
 
-              <div class="risk-row">
-                <div class="risk-info">
-                  <strong>Exact GPS Location &amp; Timestamps</strong>
-                  <span>Latitude, longitude, altitude, and exact capture timestamps in EXIF/XMP</span>
+              <div class="risk-item">
+                <div class="risk-item-info">
+                  <strong>Exact GPS Coordinates &amp; Timestamps</strong>
+                  <span>Latitude, longitude, altitude, and exact capture timestamp</span>
                 </div>
                 <span class="risk-badge risk-badge--high">High Risk</span>
               </div>
 
-              <div class="risk-row">
-                <div class="risk-info">
-                  <strong>Device Serial &amp; Author Identity</strong>
-                  <span>Camera model, serial number, PDF /Creator &amp; /Producer, DOCX core.xml author &amp;
-                    company</span>
+              <div class="risk-item">
+                <div class="risk-item-info">
+                  <strong>Device Model &amp; Author Identity</strong>
+                  <span>Camera serial number, PDF creator, DOCX author &amp; company</span>
                 </div>
                 <span class="risk-badge risk-badge--med">Medium Risk</span>
               </div>
 
-              <div class="risk-row">
-                <div class="risk-info">
+              <div class="risk-item">
+                <div class="risk-item-info">
                   <strong>After Metadata Cleaner Sanitization</strong>
-                  <span>Binary-clean output with zero visual degradation and Before &amp; After verification</span>
+                  <span>Clean file output with zero visual quality loss</span>
                 </div>
                 <span class="risk-badge risk-badge--clean">Clean &amp; Safe</span>
               </div>
@@ -159,172 +250,327 @@
     </section>
 
     <!-- ===================================================================
-         Core Features & Privacy Tools
+         Core Features
          =================================================================== -->
-    <section class="section" id="features">
+    <section class="section-padding" id="features">
       <div class="container">
         <div class="section-header">
-          <span class="eyebrow">Core Capabilities</span>
+          <div class="badge-tag">Core Capabilities</div>
           <h2 class="section-title">Powerful Privacy, <span class="text-gradient">Zero Compromise</span></h2>
           <p class="section-subtitle">
-            Built for creators, journalists, professionals, and everyday privacy &mdash; inspect,
-            scrub, and verify files in seconds.
+            Designed for everyday privacy, journalists, photographers, and creators &mdash;
+            inspect, scrub, and share with total confidence.
           </p>
-          <div class="accent-bars" aria-hidden="true"><span></span><span></span></div>
         </div>
 
         <div class="features-grid">
-          <article class="feature-card feature-card--violet">
-            <div class="feature-icon feature-icon--violet" aria-hidden="true">
+          <!-- Feature 1 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper feature-icon--indigo">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
+                stroke-linejoin="round" aria-hidden="true">
                 <circle cx="11" cy="11" r="8" />
                 <path d="m21 21-4.3-4.3" />
               </svg>
             </div>
-            <div>
-              <h3>Forensic Metadata Scanner</h3>
-              <p>
-                Reads raw JPG, PNG, WEBP, PDF, and DOCX structures on-device to uncover
-                AI prompts, EXIF, XMP, IPTC, and document properties with clear risk ratings.
-              </p>
-            </div>
+            <h3>Forensic Metadata Scanner</h3>
+            <p>
+              Scans raw JPG, PNG, WEBP, PDF, and DOCX structures locally on-device to uncover
+              AI prompts, EXIF, XMP, IPTC, and document properties with clear risk ratings.
+            </p>
           </article>
 
-          <article class="feature-card feature-card--cyan">
-            <div class="feature-icon feature-icon--cyan" aria-hidden="true">
+          <!-- Feature 2 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper feature-icon--cyan">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
+                stroke-linejoin="round" aria-hidden="true">
                 <path d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21" />
                 <path d="M22 21H7" />
                 <path d="m5 11 9 9" />
               </svg>
             </div>
-            <div>
-              <h3>100% Lossless Scrubbing</h3>
-              <p>
-                Strips metadata chunks and segments directly at the byte level without
-                re-compressing your photos or distorting PDF/DOCX layout quality.
-              </p>
-            </div>
+            <h3>100% Lossless Scrubbing</h3>
+            <p>
+              Strips metadata chunks directly at the binary byte level without re-compressing
+              your photos or distorting PDF and DOCX document layouts.
+            </p>
           </article>
 
-          <article class="feature-card feature-card--amber">
-            <div class="feature-icon feature-icon--amber" aria-hidden="true">
+          <!-- Feature 3 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper feature-icon--emerald">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
-              </svg>
-            </div>
-            <div>
-              <h3>Batch Processing (20+ Files)</h3>
-              <p>
-                Queue 20+ images and documents together, review total risks across the batch,
-                and sanitize everything in one tap with Before &amp; After re-verification.
-              </p>
-            </div>
-          </article>
-
-          <article class="feature-card feature-card--emerald">
-            <div class="feature-icon feature-icon--emerald" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
+                stroke-linejoin="round" aria-hidden="true">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
                 <path d="m9 12 2 2 4-4" />
               </svg>
             </div>
-            <div>
-              <h3>100% Offline &amp; Non-Destructive</h3>
-              <p>
-                Files never leave your phone. Keep the &ldquo;Keep Original File&rdquo; toggle enabled
-                to always save clean copies alongside your untouched originals.
-              </p>
+            <h3>100% Offline &amp; On-Device</h3>
+            <p>
+              Your files never leave your device. All processing happens strictly in local memory
+              with zero server communication, zero telemetry, and zero data tracking.
+            </p>
+          </article>
+
+          <!-- Feature 4 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper feature-icon--amber">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+              </svg>
             </div>
+            <h3>Batch Processing (20+ Files)</h3>
+            <p>
+              Select multiple photos and office documents at once. Review risks across the whole
+              batch and sanitize everything simultaneously in a single tap.
+            </p>
+          </article>
+
+          <!-- Feature 5 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper feature-icon--purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <h3>AI Prompt Stripping</h3>
+            <p>
+              Specialized parser detects and wipes hidden generation prompts, seeds, sampler settings,
+              and workflow graphs from Stable Diffusion, Midjourney, ComfyUI, and DALL-E images.
+            </p>
+          </article>
+
+          <!-- Feature 6 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper feature-icon--rose">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z" />
+                <polyline points="17 21 17 13 7 13 7 21" />
+                <polyline points="7 3 7 8 15 8" />
+              </svg>
+            </div>
+            <h3>Non-Destructive Backups</h3>
+            <p>
+              The built-in "Keep Original File" setting ensures your original files remain
+              untouched, saving clean copies safely in an organized output folder.
+            </p>
           </article>
         </div>
+      </div>
+    </section>
 
-        <!-- Built-in Privacy Tools -->
-        <div class="tools-strip">
-          <div class="tools-strip-title">Included Privacy Utility Tools</div>
-          <div class="tools-grid">
-            <div class="tool-mini">
-              <strong>Images &rarr; Clean PDF</strong>
-              <span>Strip EXIF/GPS from JPG, PNG &amp; WEBP and merge into one clean A4 PDF.</span>
+    <!-- ===================================================================
+         How It Works (3 Steps with Visual Inspector)
+         =================================================================== -->
+    <section class="section-padding section-alt" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-tag">Simple 3-Step Flow</div>
+          <h2 class="section-title">Clean Your Files in <span class="text-gradient">3 Simple Steps</span></h2>
+          <p class="section-subtitle">
+            Effortless privacy that fits naturally into your daily routine.
+          </p>
+        </div>
+
+        <div class="workflow-layout">
+          <!-- Left Visual Card -->
+          <div class="workflow-visual-card">
+            <img src="assets/find-metadata.png" alt="Inspection of files and metadata" width="820" height="546"
+              loading="lazy" />
+          </div>
+
+          <!-- Right Step Cards -->
+          <div class="steps-list">
+            <div class="step-row-card">
+              <div class="step-badge-num">1</div>
+              <div class="step-row-content">
+                <h3>Select Your Files</h3>
+                <p>
+                  Pick one or multiple photos, PDFs, or DOCX files from your gallery, file manager,
+                  or snap a fresh photo straight inside the app.
+                </p>
+              </div>
             </div>
-            <div class="tool-mini">
-              <strong>Convert to Clean PNG</strong>
-              <span>Re-encode JPG or WEBP into a fresh, zero-tag PNG copy.</span>
+
+            <div class="step-row-card">
+              <div class="step-badge-num">2</div>
+              <div class="step-row-content">
+                <h3>Inspect Detected Risks</h3>
+                <p>
+                  See exactly what hidden data exists: embedded AI prompts, GPS coordinates,
+                  device serials, camera settings, and author names before taking action.
+                </p>
+              </div>
             </div>
-            <div class="tool-mini">
-              <strong>Clean ZIP Bundle</strong>
-              <span>Scrub multiple files and pack them into a safe, metadata-free .zip.</span>
-            </div>
-            <div class="tool-mini">
-              <strong>Verify File Safety</strong>
-              <span>Quickly audit any file to confirm zero GPS, EXIF, or AI tags remain.</span>
+
+            <div class="step-row-card">
+              <div class="step-badge-num">3</div>
+              <div class="step-row-content">
+                <h3>Sanitize &amp; Share Safely</h3>
+                <p>
+                  Choose Wipe Mode or Ghost Masking. Scrub metadata in seconds and share your
+                  verified safe file with total peace of mind.
+                </p>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- Format Strip -->
+        <div class="formats-strip">
+          <span class="formats-label">Supported Formats:</span>
+          <span class="format-pill">JPG / JPEG</span>
+          <span class="format-pill">PNG</span>
+          <span class="format-pill">WEBP</span>
+          <span class="format-pill">PDF Document</span>
+          <span class="format-pill">DOCX Document</span>
+        </div>
       </div>
     </section>
 
     <!-- ===================================================================
-         App UI Preview (Real Mobile Screens)
+         DEDICATED APP SCREENS SHOWCASE (3-Device Showcase)
          =================================================================== -->
-    <section class="section" id="preview">
+    <section class="section-padding" id="screens">
       <div class="container">
         <div class="section-header">
-          <span class="eyebrow">App Interface</span>
-          <h2 class="section-title">Designed for <span class="text-gradient">One-Tap Privacy</span></h2>
+          <div class="badge-tag badge-tag--purple">App Interface &amp; Tools</div>
+          <h2 class="section-title">Designed for <span class="text-gradient">Effortless Privacy</span></h2>
           <p class="section-subtitle">
-            Clean, distraction-free mobile screens let you inspect hidden tags, sanitize batches,
-            and launch built-in privacy utilities in seconds.
+            Experience the intuitive, distraction-free mobile screens built for rapid on-device sanitization.
           </p>
-          <div class="accent-bars" aria-hidden="true"><span></span><span></span></div>
         </div>
 
-        <div class="preview-grid">
-          <article class="preview-card preview-card--violet">
-            <div class="phone-stage">
-              <div class="phone-glow phone-glow--violet" aria-hidden="true"></div>
-              <div class="phone-frame">
-                <div class="phone-speaker" aria-hidden="true"></div>
-                <div class="phone-screen">
-                  <img src="assets/screen-home.png"
-                    alt="Metadata Cleaner Home screen showing one-tap Select Files button for Images, PDF, and DOCX"
-                    width="389" height="868" loading="lazy" />
+        <div class="app-showcase-grid">
+          <!-- Screen 1: Home Dashboard -->
+          <article class="showcase-screen-card">
+            <div class="showcase-device-wrapper">
+              <div class="showcase-device-glow showcase-device-glow--indigo"></div>
+              <div class="phone-device">
+                <div class="phone-dynamic-island">
+                  <div class="phone-camera-lens"></div>
+                  <div class="phone-speaker-bar"></div>
                 </div>
+                <div class="phone-screen-display">
+                  <img src="assets/screen-home.png" alt="Metadata Cleaner mobile home dashboard screen" width="389"
+                    height="868" loading="lazy" />
+                </div>
+                <div class="phone-home-indicator"></div>
               </div>
             </div>
-            <div class="preview-caption">
-              <span class="preview-tag preview-tag--violet">01 &bull; Home Dashboard</span>
+
+            <div class="showcase-card-body">
+              <span class="showcase-tag showcase-tag--indigo">01 &bull; Dashboard</span>
               <h3>Instant File Selection</h3>
               <p>
-                Jump straight into scanning photos, PDFs, or DOCX documents with a single tap
-                and quick tab access to History, Tools, and Settings.
+                One-tap selection for images, PDFs, or DOCX files with quick access to History, Tools, and Settings.
               </p>
-            </div>
-          </article>
-
-          <article class="preview-card preview-card--cyan">
-            <div class="phone-stage">
-              <div class="phone-glow phone-glow--cyan" aria-hidden="true"></div>
-              <div class="phone-frame">
-                <div class="phone-speaker" aria-hidden="true"></div>
-                <div class="phone-screen">
-                  <img src="assets/screen-tools.png"
-                    alt="Metadata Cleaner Privacy Tools screen featuring Clean PDF, Clean PNG, Clean ZIP Bundle, and Verify File Safety"
-                    width="390" height="869" loading="lazy" />
+              <div class="showcase-feature-bullets">
+                <div class="showcase-bullet">
+                  <svg class="showcase-bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span>Quick Gallery &amp; File Picker</span>
+                </div>
+                <div class="showcase-bullet">
+                  <svg class="showcase-bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span>Real-time Risk Severity Rating</span>
                 </div>
               </div>
             </div>
-            <div class="preview-caption">
-              <span class="preview-tag preview-tag--cyan">02 &bull; Privacy Tools</span>
-              <h3>Convert, Bundle &amp; Verify</h3>
+          </article>
+
+          <!-- Screen 2: Privacy Tools -->
+          <article class="showcase-screen-card">
+            <div class="showcase-device-wrapper">
+              <div class="showcase-device-glow showcase-device-glow--cyan"></div>
+              <div class="phone-device">
+                <div class="phone-dynamic-island">
+                  <div class="phone-camera-lens"></div>
+                  <div class="phone-speaker-bar"></div>
+                </div>
+                <div class="phone-screen-display">
+                  <img src="assets/screen-tools.png" alt="Metadata Cleaner built-in privacy tools screen" width="390"
+                    height="869" loading="lazy" />
+                </div>
+                <div class="phone-home-indicator"></div>
+              </div>
+            </div>
+
+            <div class="showcase-card-body">
+              <span class="showcase-tag showcase-tag--cyan">02 &bull; Utilities</span>
+              <h3>Built-In Privacy Tools</h3>
               <p>
-                Merge images into a metadata-free PDF, convert to clean PNG, pack safe ZIP bundles,
-                or audit any file before sharing.
+                Integrated utilities to convert photos into clean PDFs, re-encode PNGs, or pack safe ZIP archives.
               </p>
+              <div class="showcase-feature-bullets">
+                <div class="showcase-bullet">
+                  <svg class="showcase-bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span>Images &rarr; Clean PDF Converter</span>
+                </div>
+                <div class="showcase-bullet">
+                  <svg class="showcase-bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span>Safe ZIP Bundle &amp; Audit Tool</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Screen 3: Batch Processing -->
+          <article class="showcase-screen-card">
+            <div class="showcase-device-wrapper">
+              <div class="showcase-device-glow showcase-device-glow--purple"></div>
+              <div class="phone-device">
+                <div class="phone-dynamic-island">
+                  <div class="phone-camera-lens"></div>
+                  <div class="phone-speaker-bar"></div>
+                </div>
+                <div class="phone-screen-display">
+                  <img src="assets/batch-phone.png" alt="Metadata Cleaner batch processing mobile screen" width="760"
+                    height="831" loading="lazy" />
+                </div>
+                <div class="phone-home-indicator"></div>
+              </div>
+            </div>
+
+            <div class="showcase-card-body">
+              <span class="showcase-tag showcase-tag--purple">03 &bull; Batch Mode</span>
+              <h3>Batch Processing (20+ Files)</h3>
+              <p>
+                Queue dozens of photos and documents together, inspect risks across the batch, and scrub in one tap.
+              </p>
+              <div class="showcase-feature-bullets">
+                <div class="showcase-bullet">
+                  <svg class="showcase-bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span>20+ Files Queue Simultaneously</span>
+                </div>
+                <div class="showcase-bullet">
+                  <svg class="showcase-bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span>Automatic Original File Backup</span>
+                </div>
+              </div>
             </div>
           </article>
         </div>
@@ -332,80 +578,82 @@
     </section>
 
     <!-- ===================================================================
-         Two Cleaning Modes (Wipe Mode vs Ghost Mask)
+         Sanitization Modes (Wipe vs Ghost Mask)
          =================================================================== -->
-    <section class="section" id="modes">
+    <section class="section-padding section-alt" id="modes">
       <div class="container">
         <div class="section-header">
-          <span class="eyebrow">Sanitization Modes</span>
+          <div class="badge-tag">Flexible Modes</div>
           <h2 class="section-title">Choose How You <span class="text-gradient">Clean or Mask</span></h2>
           <p class="section-subtitle">
-            Switch seamlessly between total metadata erasure and harmless cosmetic masking.
+            Switch effortlessly between complete metadata removal and harmless cosmetic masking.
           </p>
         </div>
 
         <div class="modes-grid">
-          <article class="mode-card mode-card--wipe">
+          <!-- Wipe Mode -->
+          <article class="mode-card">
             <div class="mode-header">
               <h3>Wipe Mode</h3>
-              <span class="mode-tag mode-tag--cyan">Total Erasure</span>
+              <span class="mode-badge mode-badge--cyan">Total Erasure</span>
             </div>
-            <p>
+            <p class="mode-desc">
               Completely strips all EXIF, XMP, IPTC, GPS coordinates, camera serials,
-              AI generation prompts, and document author properties, leaving tags blank.
+              AI prompts, and author properties, leaving metadata segments empty.
             </p>
-            <ul class="check-list">
+            <ul class="mode-list">
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                  stroke-linejoin="round" aria-hidden="true">
+                <svg class="mode-list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span>Removes APP1/APP13, PNG tEXt/iTXt/zTXt, and WEBP EXIF/XMP chunks</span>
+                <span>Removes APP1/APP13, PNG text chunks, and WEBP EXIF blocks</span>
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                  stroke-linejoin="round" aria-hidden="true">
+                <svg class="mode-list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span>Blanks PDF /Info dictionaries and DOCX docProps XML fields</span>
+                <span>Blanks PDF /Info dictionaries and DOCX core.xml author tags</span>
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                  stroke-linejoin="round" aria-hidden="true">
+                <svg class="mode-list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span>Ideal for social sharing, AI art publishing, and confidential PDFs</span>
+                <span>Ideal for social sharing, messaging, and anonymous publishing</span>
               </li>
             </ul>
           </article>
 
-          <article class="mode-card mode-card--mask">
+          <!-- Ghost Masking Mode -->
+          <article class="mode-card">
             <div class="mode-header">
               <h3>Ghost Masking</h3>
-              <span class="mode-tag mode-tag--purple">Cosmetic Spoof</span>
+              <span class="mode-badge mode-badge--purple">Cosmetic Spoof</span>
             </div>
-            <p>
-              Replaces real identifying metadata with normal, generic professional values
-              instead of leaving empty fields where parsers expect metadata headers.
+            <p class="mode-desc">
+              Replaces real identifying metadata with normal, generic placeholder values
+              when you want to preserve metadata structure for corporate tools.
             </p>
-            <ul class="check-list">
+            <ul class="mode-list">
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                  stroke-linejoin="round" aria-hidden="true">
+                <svg class="mode-list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span>Substitutes personal author, device, and software tags safely</span>
+                <span>Substitutes identifying author, device, and software headers safely</span>
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                  stroke-linejoin="round" aria-hidden="true">
+                <svg class="mode-list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span>Prevents structural distortion in strict enterprise workflows</span>
+                <span>Prevents validation errors in strict enterprise intake pipelines</span>
               </li>
             </ul>
-            <div class="mode-note">
-              <strong>Transparency Note:</strong> Cosmetic metadata replacement only &mdash;
+            <div class="mode-callout">
+              <strong>Transparency Note:</strong> Cosmetic replacement only &mdash;
               not verifiable cryptographic provenance.
             </div>
           </article>
@@ -414,119 +662,64 @@
     </section>
 
     <!-- ===================================================================
-         Supported Formats & Simple 3-Step Workflow
+         Zero-Telemetry Privacy Guarantee
          =================================================================== -->
-    <section class="section" id="formats">
-      <div class="container formats-layout">
-        <div class="formats-visual">
-          <img src="assets/find-metadata.png" alt="Inspection of Image, PDF, and DOCX files" width="820" height="546" />
-          <img src="assets/batch-phone.png" alt="Batch processing 20+ images, PDF, and DOCX files on mobile" width="760"
-            height="831" />
-        </div>
-
-        <div>
-          <span class="eyebrow">Formats &amp; Workflow</span>
-          <h2 class="section-title">Clean Images &amp; Documents in <span class="text-gradient">3 Simple Steps</span>
-          </h2>
-          <p class="section-subtitle">
-            Designed around the formats you share most every day:
-          </p>
-
-          <div class="format-pills" aria-label="Supported file formats">
-            <span class="format-pill">JPG</span>
-            <span class="format-pill">PNG</span>
-            <span class="format-pill">WEBP</span>
-            <span class="format-pill">PDF</span>
-            <span class="format-pill">DOCX</span>
-          </div>
-          <p class="format-note">
-            Note: Audio, Video, GIF, and HEIC sanitization are not supported in V1.0.
-          </p>
-
-          <div class="steps-list">
-            <div class="step-item">
-              <div class="step-num">1</div>
-              <div>
-                <h4>Select, Capture, or Share Files</h4>
-                <p>Pick from Gallery or Files, or take a fresh photo straight inside Metadata Cleaner.</p>
-              </div>
-            </div>
-            <div class="step-item">
-              <div class="step-num">2</div>
-              <div>
-                <h4>Inspect Detected Risks</h4>
-                <p>Review AI prompts, GPS tags, and creator info before touching a byte.</p>
-              </div>
-            </div>
-            <div class="step-item">
-              <div class="step-num">3</div>
-              <div>
-                <h4>Sanitize &amp; Share Safely</h4>
-                <p>Apply Wipe or Ghost Mask offline, then share or save your verified clean copy.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================================================================
-         Privacy Guarantee Banner
-         =================================================================== -->
-    <section class="section" id="privacy">
+    <section class="section-padding" id="privacy-guarantee">
       <div class="container">
-        <div class="privacy-banner">
-          <div class="privacy-visuals">
+        <div class="privacy-banner-card">
+          <div class="privacy-banner-visual">
             <img src="assets/offline-shield.png"
-              alt="Offline security shield showing lock, no internet required, and local device processing" width="820"
-              height="547" />
+              alt="Offline security shield showing lock and local on-device processing" width="320" height="213"
+              loading="lazy" />
           </div>
 
-          <div>
-            <span class="eyebrow">Zero-Telemetry Architecture</span>
-            <h2 class="section-title">Your Privacy. Our Priority.</h2>
-            <p class="section-subtitle">
+          <div class="privacy-banner-content">
+            <h2>Your Privacy. Our Priority.</h2>
+            <p>
               A privacy tool shouldn&rsquo;t collect your data. Metadata Cleaner performs every byte
               inspection and sanitization operation strictly inside your device sandbox.
             </p>
 
-            <div class="privacy-pillars">
-              <div class="pillar">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
-                  stroke-linejoin="round" aria-hidden="true">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
-                  <path d="m9 12 2 2 4-4" />
-                </svg>
-                <div>
-                  <strong>Zero File Uploads &amp; Immediate Buffer Wipe</strong>
-                  <span>Your photos and documents never touch any cloud server, and memory buffers clear right after
-                    cleaning.</span>
+            <div class="privacy-pillars-grid">
+              <div class="privacy-pillar-item">
+                <div class="privacy-pillar-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                    <path d="m9 12 2 2 4-4" />
+                  </svg>
+                </div>
+                <div class="privacy-pillar-text">
+                  <strong>Zero File Uploads</strong>
+                  <span>Your files never touch any external server. In-memory buffers clear immediately.</span>
                 </div>
               </div>
 
-              <div class="pillar">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
-                  stroke-linejoin="round" aria-hidden="true">
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="m4.9 4.9 14.2 14.2" />
-                </svg>
-                <div>
-                  <strong>No Ads, No Trackers, No Background Scanning</strong>
-                  <span>Zero third-party ad networks or analytics SDKs. Storage access happens only when you choose
-                    files.</span>
+              <div class="privacy-pillar-item">
+                <div class="privacy-pillar-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="m4.9 4.9 14.2 14.2" />
+                  </svg>
+                </div>
+                <div class="privacy-pillar-text">
+                  <strong>No Ads &amp; No Analytics Trackers</strong>
+                  <span>Zero advertising networks, zero user profiling, and no background location tracking.</span>
                 </div>
               </div>
 
-              <div class="pillar">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
-                  stroke-linejoin="round" aria-hidden="true">
-                  <rect x="3" y="11" width="18" height="11" rx="2" />
-                  <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-                </svg>
-                <div>
-                  <strong>100% Ownership &amp; Backup Protection</strong>
-                  <span>You retain complete ownership of your files, with a built-in setting to always preserve original
-                    backups.</span>
+              <div class="privacy-pillar-item">
+                <div class="privacy-pillar-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="11" width="18" height="11" rx="2" />
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                  </svg>
+                </div>
+                <div class="privacy-pillar-text">
+                  <strong>100% File Ownership</strong>
+                  <span>You retain full legal ownership of your files with safe original backup preservation.</span>
                 </div>
               </div>
             </div>
@@ -536,90 +729,142 @@
     </section>
 
     <!-- ===================================================================
-         Frequently Asked Questions (Pure HTML Details/Summary)
+         Frequently Asked Questions (Accordion)
          =================================================================== -->
-    <section class="section" id="faq">
+    <section class="section-padding section-alt" id="faq">
       <div class="container">
         <div class="section-header">
-          <span class="eyebrow">FAQ</span>
-          <h2 class="section-title">Quick <span class="text-gradient">Answers</span></h2>
+          <div class="badge-tag">Got Questions?</div>
+          <h2 class="section-title">Frequently Asked <span class="text-gradient">Questions</span></h2>
           <p class="section-subtitle">Everything you need to know about how Metadata Cleaner protects your files.</p>
         </div>
 
         <div class="faq-list">
-          <details class="faq-item" open>
-            <summary>Does Metadata Cleaner upload my photos or documents to any server?</summary>
+          <div class="faq-item active">
+            <button class="faq-question">
+              <span>Does Metadata Cleaner upload my files to any server?</span>
+              <span class="faq-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </button>
             <div class="faq-answer">
               No. All scanning, AI prompt detection, and sanitization run 100% locally on your device.
-              Your files are never uploaded or logged remotely.
+              Your files are never uploaded, logged, or shared over the internet.
             </div>
-          </details>
+          </div>
 
-          <details class="faq-item">
-            <summary>Does cleaning an image reduce its resolution or visual quality?</summary>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Does cleaning an image reduce its resolution or visual quality?</span>
+              <span class="faq-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </button>
             <div class="faq-answer">
-              No. In Wipe and Ghost Mask modes, Metadata Cleaner strips or replaces metadata markers and binary
-              chunks directly without re-compressing image pixels.
+              No. In Wipe and Ghost Mask modes, Metadata Cleaner strips or replaces binary metadata
+              markers directly without re-compressing image pixels. Your visual image quality remains 100% untouched.
             </div>
-          </details>
+          </div>
 
-          <details class="faq-item">
-            <summary>Which AI image metadata tags can Metadata Cleaner detect and strip?</summary>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Which AI image generation tags can Metadata Cleaner detect and wipe?</span>
+              <span class="faq-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </button>
             <div class="faq-answer">
-              Metadata Cleaner detects embedded prompts, negative prompts, seeds, parameters, ComfyUI workflow
-              JSONs, Midjourney/DALL-E/ChatGPT/Firefly/Imagen/NovelAI/InvokeAI tags, and C2PA /
-              <code>digitalSourceType</code> indicators inside PNG, JPG, and WEBP files.
+              Metadata Cleaner detects embedded positive prompts, negative prompts, seed numbers, sampler settings,
+              ComfyUI workflow JSON graphs, Midjourney, DALL-E, ChatGPT, Adobe Firefly, NovelAI, and C2PA /
+              digitalSourceType tags in PNG, JPG, and WEBP files.
             </div>
-          </details>
+          </div>
 
-          <details class="faq-item">
-            <summary>What is the difference between Wipe Mode and Ghost Masking?</summary>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What is the difference between Wipe Mode and Ghost Masking?</span>
+              <span class="faq-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </button>
             <div class="faq-answer">
-              Wipe Mode erases all sensitive metadata leaving fields blank or removed. Ghost Masking replaces
-              personal tags with generic, realistic cosmetic placeholders when you don&rsquo;t want empty headers.
+              Wipe Mode strips all metadata completely, leaving headers blank. Ghost Masking replaces personal
+              author, device, and GPS fields with generic, normal placeholders so parsers don't report empty header
+              errors.
             </div>
-          </details>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do I need to create an account to use the app?</span>
+              <span class="faq-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              Account sign-in is completely optional. You can use all core sanitization and privacy features
+              as a guest without signing in or providing any personal details.
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ===================================================================
-         Download / Get Started CTA
+         Download CTA Section
          =================================================================== -->
-    <section class="section" id="download">
+    <section class="cta-section" id="download">
       <div class="container">
-        <div class="cta-box">
-          <img src="assets/privacy-crest.png" alt="Metadata Cleaner verified shield crest" width="140" height="118"
-            style="margin: 0 auto 18px;" />
+        <div class="cta-card">
+          <img src="assets/privacy-crest.png" alt="Privacy Shield Crest" class="cta-crest" width="72" height="60" />
           <h2>Take Control of Your Digital Privacy Today</h2>
           <p>
-            Clean, protect, and verify your images and documents in seconds with Metadata Cleaner v1.0.0.
+            Clean, protect, and verify your photos and documents in seconds with Metadata Cleaner.
+            100% on-device &bull; Zero server uploads &bull; Free download.
           </p>
 
-          <div class="cta-buttons">
-            <a href="mailto:info@appstick.com.bd?subject=Metadata%20Cleaner%20Android%20Build%20Request"
-              class="btn btn-primary">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path
-                  d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85-.29-.15-.65-.06-.83.22l-1.88 3.24a11.46 11.46 0 0 0-8.94 0L5.65 5.67c-.19-.29-.58-.38-.87-.2-.28.18-.37.54-.22.83L6.4 9.48A10.78 10.78 0 0 0 1 18h22a10.78 10.78 0 0 0-5.4-8.52ZM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5Zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5Z" />
-              </svg>
-              Download for Android
+          <div class="cta-store-buttons">
+            <a href="mailto:info@appstick.com.bd?subject=Metadata%20Cleaner%20Android%20Download%20Request"
+              class="store-btn">
+              <span class="store-btn-icon">
+                <img src="assets/google-play.svg" alt="Google Play" width="26" height="26" />
+              </span>
+              <div class="store-btn-text">
+                <span class="store-btn-sub">GET IT ON</span>
+                <span class="store-btn-main">Google Play</span>
+              </div>
             </a>
-            <a href="mailto:info@appstick.com.bd?subject=Metadata%20Cleaner%20iOS%20Build%20Request"
-              class="btn btn-secondary">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path
-                  d="M16.365 1.43c0 1.14-.493 2.27-1.177 3.08-.744.9-1.99 1.57-2.987 1.57-.12 0-.23-.02-.3-.03-.01-.06-.04-.22-.04-.39 0-1.15.572-2.27 1.206-2.98.804-.94 2.142-1.64 3.248-1.68.03.13.05.28.05.43Zm4.565 15.71c-.03.07-.463 1.58-1.518 3.12-.945 1.34-1.94 2.71-3.43 2.71-1.517 0-1.9-.88-3.63-.88-1.698 0-2.302.91-3.67.91-1.377 0-2.332-1.26-3.428-2.8-1.287-1.82-2.323-4.63-2.323-7.28 0-4.28 2.797-6.55 5.552-6.55 1.448 0 2.675.95 3.6.95.865 0 2.222-1.01 3.902-1.01.613 0 2.886.06 4.374 2.19-.13.09-2.383 1.37-2.383 4.19 0 3.26 2.854 4.42 2.955 4.45Z" />
-              </svg>
-              Download for iOS
-            </a>
+
+            <div class="store-btn store-btn-soon">
+              <span class="store-btn-icon">
+                <img src="assets/app-store.svg" alt="App Store" width="26" height="26" />
+              </span>
+              <div class="store-btn-text">
+                <span class="store-btn-sub">Coming soon on the</span>
+                <span class="store-btn-main">App Store</span>
+              </div>
+            </div>
           </div>
 
-          <p class="cta-support">
-            Developed by <a href="https://appstick.com.bd/" target="_blank" rel="noopener noreferrer">Appstick</a>
-            &bull; Questions or feedback? Contact
-            <a href="mailto:info@appstick.com.bd">info@appstick.com.bd</a>
-            or <a href="tel:+8801404049797">+88 014 0404 9797</a>
+          <p class="cta-support-text">
+            Developed with &hearts; by <a href="https://appstick.com.bd/" target="_blank"
+              rel="noopener noreferrer">Appstick Ltd</a> &bull;
+            Questions or feedback? Reach us at <a href="mailto:info@appstick.com.bd">info@appstick.com.bd</a>
           </p>
         </div>
       </div>
@@ -631,44 +876,115 @@
        ===================================================================== -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-wrap">
+      <div class="footer-top">
+        <!-- Col 1: Brand Info -->
         <div class="footer-brand">
-          <img src="assets/logo.png" alt="Metadata Cleaner logo" class="brand-logo" width="34" height="34" />
-          <div>
-            <strong>Metadata Cleaner</strong>
-            <p>
-              Clean &bull; Protect &bull; Stay Private &mdash; by
-              <a href="https://appstick.com.bd/" target="_blank" rel="noopener noreferrer">Appstick</a>
-            </p>
+          <a href="#top" class="brand-logo">
+            <img src="assets/logo.png" alt="Metadata Cleaner Logo" class="brand-icon" width="34" height="34" />
+            <span class="brand-name">Metadata Cleaner</span>
+          </a>
+          <p>
+            Losslessly scrub AI prompts, camera EXIF, GPS location tags, and author profiles
+            from your images and documents &mdash; strictly on-device.
+          </p>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#screens">App Screens</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Product -->
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="#download">Download Android</a></li>
+            <li><a href="#download">iOS (Coming Soon)</a></li>
+            <li><a href="#inspector">Metadata Inspector</a></li>
+            <li><a href="#modes">Wipe &amp; Mask Modes</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Legal & Support -->
+        <div class="footer-col">
+          <h4>Legal &amp; Support</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="delete-account.html">Delete Account</a></li>
+            <li><a href="mailto:info@appstick.com.bd">Help &amp; Support</a></li>
+          </ul>
+          <div style="margin-top: 18px;">
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-10 6L2 7" />
+              </svg>
+              <a href="mailto:info@appstick.com.bd">info@appstick.com.bd</a>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              <a href="tel:+8801404049797">+88 014 0404 9797</a>
+            </div>
           </div>
         </div>
-
-        <ul class="footer-links">
-          <li><a href="#features">Features</a></li>
-          <li><a href="#modes">Clean Modes</a></li>
-          <li><a href="#formats">Supported Formats</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="delete-account.html">Delete Account</a></li>
-          <li><a href="https://appstick.com.bd/" target="_blank" rel="noopener noreferrer">Appstick</a></li>
-          <li><a href="mailto:info@appstick.com.bd">Support</a></li>
-        </ul>
       </div>
 
-      <div class="footer-company">
-        <div class="footer-contact">
-          <span><strong>Appstick</strong> &mdash; Software &amp; Digital Solutions</span>
-          <span>Email: <a href="mailto:info@appstick.com.bd">info@appstick.com.bd</a></span>
-          <span>Phone: <a href="tel:+8801404049797">+88 014 0404 9797</a></span>
-          <span>Web: <a href="https://appstick.com.bd/" target="_blank" rel="noopener noreferrer">appstick.com.bd</a></span>
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Metadata Cleaner. All rights reserved. Developed by <a href="https://appstick.com.bd/"
+            target="_blank" rel="noopener noreferrer">Appstick Ltd</a>.</p>
+
+        <div class="footer-socials">
+          <a href="https://facebook.com/appstick.com.bd" target="_blank" rel="noopener noreferrer" class="social-link"
+            aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.413c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.971H15.83c-1.491 0-1.956.93-1.956 1.886v2.264h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" />
+            </svg>
+          </a>
+          <a href="https://appstick.com.bd/" target="_blank" rel="noopener noreferrer" class="social-link"
+            aria-label="Appstick Website">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="2" y1="12" x2="22" y2="12" />
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg>
+          </a>
+          <a href="mailto:info@appstick.com.bd" class="social-link" aria-label="Email Support">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m22 7-10 6L2 7" />
+            </svg>
+          </a>
         </div>
-        <div class="footer-offices">
-          <span>Bangladesh: 50, KDA Outer Bypass Rd, Khulna 9100, Bangladesh</span>
-        </div>
-        <p class="footer-copy">&copy; 2026 Appstick. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
